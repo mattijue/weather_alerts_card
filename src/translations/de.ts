@@ -109,7 +109,7 @@ export const de: TranslationMap = {
   'editor.animations': 'Animationen aktivieren',
   'editor.enhance_contrast': 'Kontrast erhöhen',
   'editor.enhance_contrast_off': 'Aus',
-  'editor.enhance_contrast_subtle': 'Dezent (Standard)',
+  'editor.enhance_contrast_subtle': 'Dezent',
   'editor.enhance_contrast_strict': 'Streng (WCAG AA)',
   'editor.deduplicate': 'Warnungen deduplizieren',
   'editor.deduplicate_headlines': 'Überschriften deduplizieren',
@@ -189,7 +189,6 @@ export const de: TranslationMap = {
   'editor.no_device_alerts_hint': 'Noch keine aktiven Warnsensoren unter den ausgewählten Geräten gefunden. Die Karte füllt sich automatisch, sobald die Integration Warnungen veröffentlicht.',
 
   // Editor section labels
-  'editor.section_entity': 'Entität und Anbieter',
   'editor.section_filtering': 'Filterung',
   'editor.section_appearance': 'Darstellung',
   'editor.section_detail_panel': 'Detailbereich',

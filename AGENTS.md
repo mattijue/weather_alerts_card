@@ -24,6 +24,7 @@ Always run `npm run lint` and `npm run test` before committing.
 |------|---------|
 | `src/weather-alerts-card.ts` | Main LitElement card class. Implements HA card contract: `setConfig()`, `hass` property, `getCardSize()`, `getStubConfig()`, `window.customCards` registration. Wraps output in `<ha-card>`. Consumes normalized `WeatherAlert` objects. |
 | `src/weather-alerts-card-editor.ts` | Visual configuration editor. |
+| `src/editor-fields.ts` | The editor's field registry: the single place a *simple* config key (switch or dropdown, scalar value, delete-on-default) is declared — default, label key, panel, options. `withKey()` is the pure write core the editor's `_writeKey` fires from; `PANELS` maps every key (registry and bespoke) to its panel. |
 | `src/types.ts` | TypeScript interfaces: `WeatherAlert` (normalized, provider-agnostic), `WeatherAlertsCardConfig`, `AlertAdapter`, `NwsAlert` (raw NWS shape), `BomWarning` (raw BoM shape), `NswRfsIncident` (raw NSW RFS geo_location shape), `AlertProgress`. |
 | `src/adapters/index.ts` | Adapter registry with auto-detection. Exports `getAdapter(provider, attributes)`, `knownFeedSources()`, `pointCapableProviders()`. |
 | `src/adapters/nws.ts` | NWS adapter: parses `attributes.Alerts` → `WeatherAlert[]`. |
@@ -171,7 +172,10 @@ Conventions that are load-bearing:
   prepends the base itself, so writing the base explicitly doubles it.
 - **Docs figures are not committed.** They are regenerated on every Pages build, and
   `docs/public/img/` plus `docs/.vitepress/{dist,cache}/` are gitignored. The only
-  tracked figures are the six the README embeds.
+  tracked figures are the six the README embeds, plus the editor figure
+  (`img/editor-adaptive.svg` + `img/editor-light.webp`), which
+  `scripts/capture-editor.js` photographs from a live HA (`npm run screenshot:editor`)
+  and so cannot be rebuilt in CI: refresh it by hand when the editor layout changes.
 - **`docs:media` must run before `docs:build`** on a fresh clone — VitePress hard-fails on
   an unresolvable image rather than warning.
 - **`docs:media` dirties the six tracked figures.** Scene content is deterministic (frozen

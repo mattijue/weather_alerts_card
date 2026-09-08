@@ -41,6 +41,13 @@ Use the visual editor — every option is exposed there, and the entity picker o
 offers entities the card can actually read. **Add Card → search "Weather Alerts
 Card"**.
 
+![The visual editor: the Source panel open, with Filtering, Appearance, Detail Panel, Behavior, Dismissal and Advanced collapsed below it, each naming the settings that differ from the defaults](/img/editor-adaptive.svg)
+
+Settings are grouped into panels. Source is open; the rest start collapsed, and a
+collapsed panel's header names the settings you have changed. Open one and the
+changed rows are marked, each with a link back to its default, so a customised
+card still reads at a glance.
+
 To hand-write it instead, add a **Manual** card with the YAML above. From there, see
 the [configuration reference](./configuration) for the full option list.
 

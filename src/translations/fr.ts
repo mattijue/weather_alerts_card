@@ -109,7 +109,7 @@ export const fr: TranslationMap = {
   'editor.animations': 'Activer les animations',
   'editor.enhance_contrast': 'Améliorer le contraste',
   'editor.enhance_contrast_off': 'Désactivé',
-  'editor.enhance_contrast_subtle': 'Subtil (par défaut)',
+  'editor.enhance_contrast_subtle': 'Subtil',
   'editor.enhance_contrast_strict': 'Strict (WCAG AA)',
   'editor.deduplicate': 'Dedupliquer les alertes',
   'editor.deduplicate_headlines': 'Dédupliquer les titres',
@@ -189,7 +189,6 @@ export const fr: TranslationMap = {
   'editor.no_device_alerts_hint': 'Aucun capteur d\'alerte actif trouvé sous les appareils sélectionnés pour le moment. La carte se remplira automatiquement lorsque l\'intégration publiera des alertes.',
 
   // Editor section labels
-  'editor.section_entity': 'Entite et fournisseur',
   'editor.section_filtering': 'Filtrage',
   'editor.section_appearance': 'Apparence',
   'editor.section_detail_panel': 'Panneau de details',

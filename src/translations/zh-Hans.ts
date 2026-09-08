@@ -109,7 +109,7 @@ export const zhHans: TranslationMap = {
   'editor.animations': '启用动画',
   'editor.enhance_contrast': '增强对比度',
   'editor.enhance_contrast_off': '关闭',
-  'editor.enhance_contrast_subtle': '柔和（默认）',
+  'editor.enhance_contrast_subtle': '柔和',
   'editor.enhance_contrast_strict': '严格（WCAG AA）',
   'editor.deduplicate': '去重警报',
   'editor.deduplicate_headlines': '去重标题',
@@ -189,7 +189,6 @@ export const zhHans: TranslationMap = {
   'editor.no_device_alerts_hint': '所选设备下尚未找到活跃警报传感器。当集成发布警报时，卡片将自动填充。',
 
   // Editor section labels
-  'editor.section_entity': '实体与提供方',
   'editor.section_filtering': '过滤',
   'editor.section_appearance': '外观',
   'editor.section_detail_panel': '详情面板',

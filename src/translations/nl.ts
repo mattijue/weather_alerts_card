@@ -109,7 +109,7 @@ export const nl: TranslationMap = {
   'editor.animations': 'Animaties inschakelen',
   'editor.enhance_contrast': 'Contrast verbeteren',
   'editor.enhance_contrast_off': 'Uit',
-  'editor.enhance_contrast_subtle': 'Subtiel (standaard)',
+  'editor.enhance_contrast_subtle': 'Subtiel',
   'editor.enhance_contrast_strict': 'Strikt (WCAG AA)',
   'editor.deduplicate': 'Waarschuwingen ontdubbelen',
   'editor.deduplicate_headlines': 'Kopteksten ontdubbelen',
@@ -189,7 +189,6 @@ export const nl: TranslationMap = {
   'editor.no_device_alerts_hint': 'Nog geen actieve waarschuwingssensoren gevonden onder de geselecteerde apparaten. De kaart wordt automatisch gevuld wanneer de integratie waarschuwingen publiceert.',
 
   // Editor section labels
-  'editor.section_entity': 'Entiteiten & Provider',
   'editor.section_filtering': 'Filteren',
   'editor.section_appearance': 'Weergave',
   'editor.section_detail_panel': 'Detailpaneel',
